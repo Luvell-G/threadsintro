@@ -972,9 +972,9 @@ for t in range(numthreads):
 procs.restore()
 
 # run it
-t1 = time.clock()
+t1 = time.perf_counter()
 ic = cpu.run(procs, intfreq, intrand)
-t2 = time.clock()
+t2 = time.perf_counter()
 
 if printstats:
     print('')
